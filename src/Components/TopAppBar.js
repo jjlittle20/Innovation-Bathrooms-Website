@@ -2,19 +2,17 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-
 import logo from "./img/header.png";
 import Hidden from "@material-ui/core/Hidden";
-
 import { Paper } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    display: "block",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -28,10 +26,11 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     flexGrow: 1,
+    paddingBottom: 10,
   },
   logoImg: {
     height: 69,
-    paddingRight: 5,
+
     bottom: 0,
   },
 }));
@@ -51,9 +50,9 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Paper elevation={0} className={classes.logo}>
+          <div className={classes.logo}>
             <img className={classes.logoImg} src={logo} alt="Logo" />
-          </Paper>
+          </div>
           <Hidden mdDown>
             <Button color="black">Gallery</Button>
             <Button color="black">FAQ</Button>
