@@ -13,7 +13,10 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import ServiceGuarentee from "./img/checkmark.svg";
+import ServiceGuarentee from "./img/checkTwo.svg";
+import Install from "./img/install.svg";
+import Contact from "./img/Contact.svg";
+import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -38,10 +41,34 @@ const useStyles = makeStyles((theme) => ({
   },
   serviceContainer: {
     paddingTop: theme.spacing(3),
+    paddingBottom: theme.spacing(3),
   },
   serviceContainerTitle: {
-    fontWeight: 800,
+    fontWeight: 600,
     paddingBottom: theme.spacing(3),
+    textAlign: "center",
+  },
+  Card: {
+    height: "100%",
+  },
+  media: {
+    height: 200,
+    width: 200,
+  },
+  cardCenter: {
+    display: "flex",
+    justifyContent: "center",
+  },
+  cardButtonArea: {
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 28,
+  },
+  cardButtonAreaOne: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  cardTypography: {
     textAlign: "center",
   },
 }));
@@ -64,30 +91,39 @@ function App() {
             <Typography variant="h6" className={classes.title} color="primary">
               Innovation Bathrooms
             </Typography>
-            <Button color="inherit">Gallery</Button>
-            <Button color="inherit">FAQ</Button>
-            <Button color="inherit">Contact Us</Button>
+            <Hidden mdDown>
+              <Button color="inherit">Gallery</Button>
+              <Button color="inherit">FAQ</Button>
+              <Button color="inherit">Contact Us</Button>
+            </Hidden>
           </Toolbar>
         </AppBar>
         <Box className={classes.hero}>
           <Box>Stylish and Bespoke Bathrooms</Box>
         </Box>
         <Container maxWidth="lg" className={classes.serviceContainer}>
-          <Typography variant="h3" className={classes.serviceContainerTitle}>
+          <Typography
+            variant="h3"
+            className={classes.serviceContainerTitle}
+            color="primary"
+          >
             Bathroom Installations in Bromley, Orpington, Bexley and Dartford
             areas
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
+              <Card elevation={0} className={classes.Card}>
                 <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    component="img"
-                    src={ServiceGuarentee}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
+                  <div className={classes.cardCenter}>
+                    <CardMedia
+                      className={classes.media}
+                      component="img"
+                      src={ServiceGuarentee}
+                      title="Workmanship Guarenteed"
+                    />
+                  </div>
+
+                  <CardContent className={classes.cardTypography}>
                     <Typography
                       variant="body2"
                       color="textSecondary"
@@ -101,23 +137,26 @@ function App() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
+                <CardActions className={classes.cardButtonAreaOne}>
+                  <Button variant="contained" size="small" color="primary">
                     Learn More
                   </Button>
                 </CardActions>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
+              <Card elevation={0} className={classes.Card}>
                 <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    component="img"
-                    src={ServiceGuarentee}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
+                  <div className={classes.cardCenter}>
+                    <CardMedia
+                      className={classes.media}
+                      component="img"
+                      src={Install}
+                      title="Profesional installation"
+                    />
+                  </div>
+
+                  <CardContent className={classes.cardTypography}>
                     <Typography
                       variant="body2"
                       color="textSecondary"
@@ -130,23 +169,26 @@ function App() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
+                <CardActions className={classes.cardButtonArea}>
+                  <Button variant="contained" size="small" color="primary">
                     Learn More
                   </Button>
                 </CardActions>
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <Card className={classes.card}>
+              <Card elevation={0} className={classes.Card}>
                 <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    component="img"
-                    src={ServiceGuarentee}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
+                  <div className={classes.cardCenter}>
+                    <CardMedia
+                      className={classes.media}
+                      component="img"
+                      src={Contact}
+                      title="Contact Us!"
+                    />
+                  </div>
+
+                  <CardContent className={classes.cardTypography}>
                     <Typography
                       variant="body2"
                       color="textSecondary"
@@ -159,8 +201,8 @@ function App() {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
+                <CardActions className={classes.cardButtonArea}>
+                  <Button variant="contained" size="small" color="primary">
                     Learn More
                   </Button>
                 </CardActions>
