@@ -78,26 +78,6 @@ function Home() {
   return (
     <body>
       <div className="App">
-        <AppBar position="static" className={classes.appBar} color="background">
-          <Toolbar>
-            <IconButton
-              edge="start"
-              className={classes.menuButton}
-              color="inherit"
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" className={classes.title} color="primary">
-              Innovation Bathrooms
-            </Typography>
-            <Hidden mdDown>
-              <Button color="inherit">Gallery</Button>
-              <Button color="inherit">FAQ</Button>
-              <Button color="inherit">Contact Us</Button>
-            </Hidden>
-          </Toolbar>
-        </AppBar>
         <Box className={classes.hero}>
           <Box>Stylish and Bespoke Bathrooms</Box>
         </Box>
