@@ -1,11 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import { Box, Container, Grid, Link } from "@material-ui/core";
 import ImageHero from "./img/hero.jpg";
 import Card from "@material-ui/core/Card";
@@ -16,15 +12,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import ServiceGuarentee from "./img/checkTwo.svg";
 import Install from "./img/install.svg";
 import Contact from "./img/Contact.svg";
-import Hidden from "@material-ui/core/Hidden";
 
 const useStyles = makeStyles((theme) => ({
-  title: {
-    flexGrow: 1,
-  },
-  appBar: {
-    backgroundColor: "#fff",
-  },
   hero: {
     backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${ImageHero})`,
     height: "850px",
@@ -190,70 +179,6 @@ function Home() {
             </Grid>
           </Grid>
         </Container>
-        <footer>
-          <Box
-            px={{ xs: 3, sm: 10 }}
-            py={{ xs: 5, sm: 10 }}
-            bgcolor="text.secondary"
-            color="white"
-          >
-            <Container maxWidth="lg">
-              <Grid container spacing={5}>
-                <Grid item xs={12} sm={4}>
-                  <Box borderBottom={1}>Help</Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      FAQ
-                    </Link>
-                  </Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Testimonials
-                    </Link>
-                  </Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Suppliers
-                    </Link>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                  <Box borderBottom={1}>Get A Quote</Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Contact Us
-                    </Link>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                  <Box borderBottom={1}>Navigation</Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Home
-                    </Link>
-                  </Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Gallery
-                    </Link>
-                  </Box>
-                  <Box>
-                    <Link href="/" color="inherit">
-                      Terms and Conditions
-                    </Link>
-                  </Box>
-                </Grid>
-              </Grid>
-              <Box
-                textAlign="center"
-                pt={{ xs: 5, sm: 10 }}
-                pb={{ xs: 5, sm: 0 }}
-              >
-                Innovation Bathrooms&reg; {new Date().getFullYear()}
-              </Box>
-            </Container>
-          </Box>
-        </footer>
       </div>
     </body>
   );
