@@ -172,7 +172,7 @@ function Home() {
                 </CardActionArea>
                 <CardActions className={classes.cardButtonArea}>
                   <Button variant="contained" size="small" color="primary">
-                    Learn More
+                    Contact Us
                   </Button>
                 </CardActions>
               </Card>

@@ -44,8 +44,10 @@ function Nav() {
           </Link>
           <Typography>
             <Hidden mdDown>
-              <Button color="inherit">Gallery</Button>
-              <Link to="/Faq" color="inherit" className="links">
+              <Link to="/Gallery" color="inherit" className={classes.titleLink}>
+                <Button color="#fff">Gallery</Button>
+              </Link>
+              <Link to="/Faq" color="inherit" className={classes.titleLink}>
                 <Button color="#fff">FAQ</Button>
               </Link>
 
