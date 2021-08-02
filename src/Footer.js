@@ -1,7 +1,6 @@
 import react from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Container, Grid, Link } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -27,7 +26,7 @@ function Footer() {
                 </Box>
 
                 <Box>
-                  <Link href="/" color="inherit">
+                  <Link href="/Suppliers" color="inherit">
                     Suppliers
                   </Link>
                 </Box>
@@ -53,7 +52,7 @@ function Footer() {
                   </Link>
                 </Box>
                 <Box>
-                  <Link href="/" color="inherit">
+                  <Link href="/TermsandConditions" color="inherit">
                     Terms and Conditions
                   </Link>
                 </Box>

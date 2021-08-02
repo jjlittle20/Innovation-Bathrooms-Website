@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import NavDrawer from "./NavDrawer";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -29,14 +30,7 @@ function Nav() {
     <div>
       <AppBar position="static" className={classes.appBar} color="background">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
+          <NavDrawer />
           <Link to="/" color="inherit" className={classes.titleLink}>
             <Typography variant="h6" className={classes.title} color="primary">
               Innovation Bathrooms
