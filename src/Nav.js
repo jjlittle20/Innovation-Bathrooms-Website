@@ -51,7 +51,13 @@ function Nav() {
                 <Button color="#fff">FAQ</Button>
               </Link>
 
-              <Button color="inherit">Contact Us</Button>
+              <Link
+                to="/ContactUs"
+                color="inherit"
+                className={classes.titleLink}
+              >
+                <Button color="#fff">Contact Us</Button>
+              </Link>
             </Hidden>
           </Typography>
         </Toolbar>

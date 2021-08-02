@@ -6,6 +6,8 @@ import Gallery from "./Gallery";
 import ContactUs from "./ContactUs";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
+import Suppliers from "./Suppliers";
+import TermsandConditions from "./TermsandConditions";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/Faq" component={Faq} />
           <Route path="/Gallery" component={Gallery} />
           <Route path="/ContactUs" component={ContactUs} />
+          <Route path="/Suppliers" component={Suppliers} />
+          <Route path="/TermsandConditions" component={TermsandConditions} />
         </Switch>
         <Footer />
       </div>

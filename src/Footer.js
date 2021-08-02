@@ -1,6 +1,7 @@
 import react from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Container, Grid, Link } from "@material-ui/core";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -20,15 +21,11 @@ function Footer() {
               <Grid item xs={12} sm={4}>
                 <Box borderBottom={1}>Help</Box>
                 <Box>
-                  <Link href="/" color="inherit">
+                  <Link href="/FAQ" color="inherit">
                     FAQ
                   </Link>
                 </Box>
-                <Box>
-                  <Link href="/" color="inherit">
-                    Testimonials
-                  </Link>
-                </Box>
+
                 <Box>
                   <Link href="/" color="inherit">
                     Suppliers
@@ -38,7 +35,7 @@ function Footer() {
               <Grid item xs={12} sm={4}>
                 <Box borderBottom={1}>Get A Quote</Box>
                 <Box>
-                  <Link href="/" color="inherit">
+                  <Link href="/ContactUs" color="inherit">
                     Contact Us
                   </Link>
                 </Box>
@@ -51,7 +48,7 @@ function Footer() {
                   </Link>
                 </Box>
                 <Box>
-                  <Link href="/" color="inherit">
+                  <Link href="/Gallery" color="inherit">
                     Gallery
                   </Link>
                 </Box>
