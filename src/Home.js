@@ -107,7 +107,12 @@ function Home() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className={classes.cardButtonAreaOne}>
-                  <Button variant="contained" size="small" color="primary">
+                  <Button
+                    href="/Gallery"
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                  >
                     Learn More
                   </Button>
                 </CardActions>
@@ -139,7 +144,12 @@ function Home() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className={classes.cardButtonArea}>
-                  <Button variant="contained" size="small" color="primary">
+                  <Button
+                    href="/Suppliers"
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                  >
                     Learn More
                   </Button>
                 </CardActions>
@@ -171,7 +181,12 @@ function Home() {
                   </CardContent>
                 </CardActionArea>
                 <CardActions className={classes.cardButtonArea}>
-                  <Button variant="contained" size="small" color="primary">
+                  <Button
+                    href="/ContactUs"
+                    variant="contained"
+                    size="small"
+                    color="primary"
+                  >
                     Contact Us
                   </Button>
                 </CardActions>
