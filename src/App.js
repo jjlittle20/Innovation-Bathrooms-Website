@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Home from "./Home";
 import Faq from "./Faq";
 import Gallery from "./Gallery";
+import ContactUs from "./ContactUs";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Faq" component={Faq} />
           <Route path="/Gallery" component={Gallery} />
+          <Route path="/ContactUs" component={ContactUs} />
         </Switch>
         <Footer />
       </div>
